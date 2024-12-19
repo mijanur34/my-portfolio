@@ -305,8 +305,8 @@ footer .column .socials{
 footer .column .socials a{
     color: #ccc;
     border: 1px solid #ccc;
-    padding: 5px 10px;
-    font-size: 1.25rem;
+    padding: 5px 12px;
+    font-size: 1.5rem;
     border-radius: 100%;
     transition: all 0.3s ease;
 
@@ -320,18 +320,18 @@ footer .column .socials a:hover{
 footer .column h4{
     color: #fff;
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
-footer.column > a{
+footer .column > a{
     display: block;
     color: #ccc;
     margin-bottom: 1rem;
     transition: all 0.3s ease;
 
 }
-footer.column > a:hover{
+footer .column > a:hover{
     color: #1d4ed8;
 }
 
