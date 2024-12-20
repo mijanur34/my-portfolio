@@ -70,7 +70,7 @@ nav{
     font-size: 1rem;
     color: #fff;
     background-color: #1d4ed8;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -225,6 +225,7 @@ section .header{
     display: flex;
     flex-direction: column;
     border: 2px solid transparent;
+    border-radius: 8px;
     transition: all 0.3s ease;
 
 }
@@ -276,14 +277,14 @@ section .header{
 }
 
 .pricing .card button:hover {
-    background-color: #1e40af;
-    border-color: #1d4ed8;
+    background-color: #6200ffe5;
+    border-color: #6200ff;
 }
 
 footer{
     position: relative;
     display: grid;
-    grid-template-columns:400px repeat(3,1fr);
+    grid-template-columns:400px repeat(3, 1fr);
     gap: 2rem;
 }
 
@@ -305,8 +306,8 @@ footer .column .socials{
 footer .column .socials a{
     color: #ccc;
     border: 1px solid #ccc;
-    padding: 5px 12px;
-    font-size: 1.5rem;
+    padding: 5px 10px;
+    font-size: 1.25rem;
     border-radius: 100%;
     transition: all 0.3s ease;
 
@@ -320,7 +321,7 @@ footer .column .socials a:hover{
 footer .column h4{
     color: #fff;
     margin-bottom: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -342,4 +343,40 @@ footer .column > a:hover{
     color: #ccc;
     font-size: 0.8rem;
     text-align: center;
+}
+
+@media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+    .features{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pricing{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 600px){
+    header .image::before{
+        display: none;
+    }
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pricing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
 }
